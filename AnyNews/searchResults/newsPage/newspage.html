@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../searchres.css">
+    <link rel="stylesheet" href="newsPage.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="newsCard.css">
+</head>
+
+<body>
+
+    <!-- <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar">
+            <a class="navbar-brand navbarH" href="../../index.html">AnyNews</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                   
+                </ul>
+            </div>
+        </nav>
+    </div> -->
+
+    <div class="container" data-aos="fade-down" data-aos-duration="2000" >
+        <nav class="navbar navbar-expand-lg navbar-dark navbar">
+            <a class="navbar-brand navbarH" href="../../index.html">AnyNews</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav" id="ulTopcis">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../topicPage/topicPage.html?q=Sport">Sport</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../topicPage/topicPage.html?q=Tech">Tech</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../topicPage/topicPage.html?q=Business">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../topicPage/topicPage.html?q=Entertainment">Entertainment</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="../searchResults/topicPage/topicPage.html?q=COVID-19">Random</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../topicPage/topicPage.html?q=COVID-19">COVID-19</a>
+                    </li>
+                    <!-- 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Random news</a>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="blockNews">
+        <div class="container bluredBlock">
+
+                    <img style="width: 50%;" id="newsImg" src="" alt="">
+                <div class="newsInfoBlock">
+                    <h2 id="title">Title</h2>
+                    <p id="date"></p>
+                    <p id="summary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi laboriosam praesentium in
+                        dolore
+                        eaque facilis ut deleniti itaque nesciunt voluptatibus expedita iste cumque, odit consequatur
+                        impedit, accusantium ullam ipsa explicabo. Autem, incidunt! Vitae fugit animi quidem quis. Nobis
+                        modi adipisci totam nesciunt ab cum asperiores distinctio libero earum itaque, sint impedit
+                        voluptatem iusto consequatur provident placeat sit, commodi eveniet reprehenderit, voluptatum
+                        quae
+                        ad accusantium sapiente qui? Autem facere dignissimos exercitationem voluptate, ea debitis ipsum
+                        illum, nobis sapiente maxime nulla deserunt esse? Et ex nihil neque in error delectus iste velit
+                        minus. Illo debitis dolorum praesentium? Perferendis, aperiam voluptas! Consequuntur, magni.</p>
+                <p id="source">Source: </p>
+            </div>
+            <hr id="hrNewsRel">
+            <div id="RelNewsBlcok" class="relNewsBlock">
+                <h2>Related news</h2>
+                <!-- <div id="card-carousel" class="card-carousel"> -->
+                    <!-- <div class="card" id="1">
+                        <div class="image-container" style="background-image: url("");"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+                    </div>
+                    <div class="card" id="2">
+                        <div class="image-container"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+                    </div>
+                    <div class="card" id="3">
+                        <div class="image-container"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+                    </div>
+                    <div class="card" id="4">
+                        <div class="image-container"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+                    </div>
+                    <div class="card" id="5">
+                        <div class="image-container"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+                    </div> -->
+                <!-- </div>
+                <a href="#" class="visuallyhidden card-controller">Carousel controller</a> -->
+                
+                <div id="newsRecBlock" class="row">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="newspage.js"></script>
+
+</html>

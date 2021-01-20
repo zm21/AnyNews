@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../searchres.css">
+    <link rel="stylesheet" href="topicPage.css">
+</head>
+<body>
+    
+
+    <div class="container header">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar navBg">
+            <a class="navbar-brand navbarH" href="../../index.html">AnyNews</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav" id="ulTopcis">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li id="liSport" class="nav-item">
+                        <a class="nav-link" href="topicPage.html?q=Sport">Sport</a>
+                    </li>
+                    <li id="liTech" class="nav-item">
+                        <a class="nav-link" href="topicPage.html?q=Tech">Tech</a>
+                    </li>
+                    <li id="liBusiness" class="nav-item">
+                        <a class="nav-link" href="topicPage.html?q=Business">Business</a>
+                    </li>
+                    <li id="liEntertainment" class="nav-item">
+                        <a class="nav-link" href="topicPage.html?q=Entertainment">Entertainment</a>
+                    </li>
+                    <li id="liCOVID19" class="nav-item">
+                        <a class="nav-link" href="topicPage.html?q=COVID-19">COVID-19</a>
+                    </li>
+                    <!-- 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Random news</a>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="container topicBlock">
+        <div class="row" id="newsBlock" >
+            <!-- <div class="newsCard col-12 col-sm-8">
+                <a class="butFrame " href="#" style="background:url(https://icdn4.digitaltrends.com/image/digitaltrends/amd-radeon-rx-6900-xt-1200x630-c-ar1.91.jpg)">
+                    <div class="butTextWrap">
+                      <div class="butHeading">*** BUTTON HEADING ***
+                        <br/>
+                        <div class="butText">*** BUTTON TEXT ***</div>
+                      </div>
+                      <p>Read More...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="newsCard col-12 col-sm-4">
+                <a class="butFrame " href="#" style="background:url(https://icdn4.digitaltrends.com/image/digitaltrends/amd-radeon-rx-6900-xt-1200x630-c-ar1.91.jpg)">
+                    <div class="butTextWrap">
+                      <div class="butHeading">*** BUTTON HEADING ***
+                        <br/>
+                        <div class="butText">*** BUTTON TEXT ***</div>
+                      </div>
+                      <p>Read More...</p>
+                    </div>
+                </a>
+            </div>      
+            <div class="newsCard col-12 col-sm-4">
+                <a class="butFrame " href="#" style="background:url(https://icdn4.digitaltrends.com/image/digitaltrends/amd-radeon-rx-6900-xt-1200x630-c-ar1.91.jpg)">
+                    <div class="butTextWrap">
+                      <div class="butHeading">*** BUTTON HEADING ***
+                        <br/>
+                        <div class="butText">*** BUTTON TEXT ***</div>
+                      </div>
+                      <p>Read More...</p>
+                    </div>
+                </a>
+            </div>   
+            <div class="newsCard col-12 col-sm-8">
+                <a class="butFrame " href="#" style="background:url(https://icdn4.digitaltrends.com/image/digitaltrends/amd-radeon-rx-6900-xt-1200x630-c-ar1.91.jpg)">
+                    <div class="butTextWrap">
+                      <div class="butHeading">*** BUTTON HEADING ***
+                        <br/>
+                        <div class="butText">*** BUTTON TEXT ***</div>
+                      </div>
+                      <p>Read More...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="newsCard col-12 col-sm-8">
+                <a class="butFrame " href="#" style="background:url(https://icdn4.digitaltrends.com/image/digitaltrends/amd-radeon-rx-6900-xt-1200x630-c-ar1.91.jpg)">
+                    <div class="butTextWrap">
+                      <div class="butHeading">*** BUTTON HEADING ***
+                        <br/>
+                        <div class="butText">*** BUTTON TEXT ***</div>
+                      </div>
+                      <p>Read More...</p>
+                    </div>
+                </a>
+            </div>
+            <div class="newsCard col-12 col-sm-4">
+                <a class="butFrame " href="#" style="background:url(https://icdn4.digitaltrends.com/image/digitaltrends/amd-radeon-rx-6900-xt-1200x630-c-ar1.91.jpg)">
+                    <div class="butTextWrap">
+                      <div class="butHeading">*** BUTTON HEADING ***
+                        <br/>
+                        <div class="butText">*** BUTTON TEXT ***</div>
+                      </div>
+                      <p>Read More...</p>
+                    </div>
+                </a>
+            </div>      -->
+        </div>     
+        <p id="loadMore" onclick="NextPage()">Load more...</p>
+    </div>
+   
+    
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="topicPage.js"></script>
+</html>

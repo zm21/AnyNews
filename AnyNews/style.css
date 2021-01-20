@@ -1,0 +1,127 @@
+/* body{
+    background-color: #172541;
+} */
+
+body{
+    background: linear-gradient(to top right, #da11a8 0%, #5906d7 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.navbar{
+    font-size: 24px;
+}
+
+.navbarH{
+    font-size: 24px;
+}
+
+.searchBlock{
+    padding-top: 28%;
+    padding-bottom: 28%;
+    color: white;
+}
+
+
+@media (min-width: 768px) {
+    .searchBlock {
+        height: auto;
+    }
+  }
+
+@media (min-width: 992px) {
+    .searchBlock {
+     height: 80vh;
+    }
+  }
+
+
+.searchBlock h2{
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+
+.searchBlock p{
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.searchBlock input{
+    width: 80%;
+    border: 0px;
+    font-size: 42px;
+    background: #FFFFFF;
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+
+
+.weatherBlock{
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
+    border-radius: 5px;
+    height: 100%;
+    text-align: center;
+    padding-top: 25px;
+    
+
+
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    color: white;
+}
+
+.section{
+    height: 100vh;
+}
+
+.no-outline:focus {
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(158, 158, 158, 0.493);
+}
+
+#temp{
+    font-size: 64px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+#weath{
+    font-size: 24px;
+}
+
+.airQuality{
+    background-color: rgba(255, 255, 255, 0.253);
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 10px;
+    width: fit-content;
+}
+
+.nearestWeather{
+    padding-top: 50px;
+}
+
+.weatherPreview{
+    display: flex;
+    justify-content: space-between;
+}
+
+#dayWeath{
+    float: left;
+}
+#dayTemp{
+    float: right;
+}
